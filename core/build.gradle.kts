@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.johnvazna.core"
+    namespace = Configuration.packageCore
     compileSdk = (Configuration.compileSdkVersion)
 
     defaultConfig {
@@ -15,8 +15,8 @@ android {
     }
 
     buildTypes {
-        create("dev") {
-            initWith(getByName("debug"))
+        create(Configuration.ENV_DEV) {
+            initWith(getByName(Configuration.ENV_DEBUG))
         }
     }
 

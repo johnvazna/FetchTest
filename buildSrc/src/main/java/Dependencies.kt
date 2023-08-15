@@ -6,6 +6,7 @@ object Dependencies {
     val junit by lazy { "junit:junit:${Versions.jUnit}" }
     val mockk by lazy { "io.mockk:mockk:${Versions.mockk}" }
     val androidTest by lazy { "androidx.test.ext:junit:${Versions.androidTest}" }
+    val roboElectric by lazy { "org.robolectric:robolectric:${Versions.roboElectric}" }
 
     //Core
 
@@ -30,6 +31,8 @@ object Dependencies {
     val gson by lazy { "com.google.code.gson:gson:${Versions.gsonVersion}" }
     val okHttp by lazy { "com.squareup.okhttp3:okhttp:${Versions.okhttpVersion}" }
     val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}" }
+    val retrofitConverter by lazy { "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}" }
+    val logginInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpVersion}" }
 
     //DI
 
