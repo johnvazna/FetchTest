@@ -6,6 +6,7 @@ object Versions {
     const val jUnit = "4.13.2"
     const val mockk = "1.12.0"
     const val androidTest = "1.1.3"
+    const val roboElectric = "4.6.1"
 
     //Core
 

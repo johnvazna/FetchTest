@@ -21,22 +21,22 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        getByName(Configuration.ENV_RELEASE) {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
             resValue("string", "app_name", "FetchTest")
         }
-        create("dev") {
-            initWith(getByName("debug"))
+        create(Configuration.ENV_DEV) {
+            initWith(getByName(Configuration.ENV_DEBUG))
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName(Configuration.ENV_DEBUG)
             resValue("string", "app_name", "FetchTest[D]")
         }
     }
@@ -63,6 +63,9 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.core_module))
+    implementation(project(Modules.network_module))
+
     kapt(Dependencies.hiltCompiler)
     implementation(Dependencies.hilt)
 
