@@ -16,6 +16,7 @@ object Configuration {
     //Packages
 
     const val packageCore = "com.johnvazna.core"
+    const val packageHiring = "com.johnvazna.hiring"
     const val packageApp = "com.johnvazna.fetchtest"
     const val packageNetwork = "com.johnvazna.network"
 
