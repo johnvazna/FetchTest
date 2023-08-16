@@ -15,7 +15,11 @@ object Versions {
     const val appCompat = "1.4.1"
     const val navVersion = "2.5.1"
     const val androidCore = "1.7.0"
+    const val compose = "2023.01.00"
+    const val composeMaterial = "1.4.1"
+    const val composeActivity = "1.6.1"
     const val constraintLayout = "2.1.3"
+    const val composeMaterial3 = "3:1.0.1"
 
     //LifeCycle
 

@@ -64,4 +64,8 @@ dependencies {
     implementation(Dependencies.gson)
     implementation(Dependencies.logginInterceptor)
     implementation(Dependencies.retrofitConverter)
+
+    testImplementation(Dependencies.junit)
+    testImplementation(Dependencies.mockk)
+    testImplementation(Dependencies.coroutinesTesting)
 }
