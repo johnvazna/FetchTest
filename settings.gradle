@@ -16,3 +16,4 @@ rootProject.name = "FetchTest"
 include ':app'
 include ':core'
 include ':feature-library:network'
+include ':feature:hiring'

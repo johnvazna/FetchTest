@@ -64,6 +64,7 @@ android {
 
 dependencies {
     implementation(project(Modules.core_module))
+    implementation(project(Modules.hiring_module))
     implementation(project(Modules.network_module))
 
     kapt(Dependencies.hiltCompiler)
