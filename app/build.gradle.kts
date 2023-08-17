@@ -67,6 +67,9 @@ dependencies {
     implementation(project(Modules.hiring_module))
     implementation(project(Modules.network_module))
 
+    implementation(Dependencies.navigationUI)
+    implementation(Dependencies.navigationFragment)
+
     kapt(Dependencies.hiltCompiler)
     implementation(Dependencies.hilt)
 
@@ -74,4 +77,8 @@ dependencies {
     implementation(Dependencies.kotlin)
     implementation(Dependencies.appCompat)
     implementation(Dependencies.materialDesign)
+
+    testImplementation(Dependencies.junit)
+    testImplementation(Dependencies.mockk)
+    testImplementation(Dependencies.coroutinesTesting)
 }

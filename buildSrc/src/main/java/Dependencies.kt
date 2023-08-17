@@ -10,11 +10,20 @@ object Dependencies {
 
     //Core
 
+    val composeUI by lazy { "androidx.compose.ui:ui" }
+    val composeMaterial by lazy { "androidx.compose.material:material" }
     val core by lazy { "androidx.core:core-ktx:${Versions.androidCore}" }
+    val composeMaterial3 by lazy { "androidx.compose.material3:material3" }
+    val composeRxJava by lazy { "androidx.compose.runtime:runtime-rxjava2" }
+    val composeFoundation by lazy { "androidx.compose.foundation:foundation" }
+    val composeLiveData by lazy { "androidx.compose.runtime:runtime-livedata" }
     val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}" }
+    val composeBoom by lazy { "androidx.compose:compose-bom:${Versions.compose}" }
+    val composePreview by lazy { "androidx.compose.ui:ui-tooling-preview-android:+" }
     val kotlin by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}" }
     val materialDesign by lazy { "com.google.android.material:material:${Versions.material}" }
     val navigationUI by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}" }
+    val composeActivity by lazy { "androidx.activity:activity-compose:${Versions.composeActivity}" }
     val navigationFragment by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navVersion}" }
     val constraintLayout by lazy { "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}" }
 

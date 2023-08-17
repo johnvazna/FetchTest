@@ -54,4 +54,8 @@ dependencies {
     implementation(Dependencies.appCompat)
     implementation(Dependencies.materialDesign)
     implementation(Dependencies.constraintLayout)
+
+    testImplementation(Dependencies.junit)
+    testImplementation(Dependencies.mockk)
+    testImplementation(Dependencies.coroutinesTesting)
 }
